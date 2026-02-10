@@ -1,0 +1,4 @@
+node_modules/
+.venv/
+VibeCoding_BreackBlock/
+.DS_Store

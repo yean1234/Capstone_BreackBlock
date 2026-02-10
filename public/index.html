@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Break Block</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="homeScreen" class="screen home-screen">
+      <div class="home-card">
+        <h1 class="home-title">Break Block</h1>
+        <button id="start-button" class="home-button" type="button">Start</button>
+      </div>
+    </div>
+    <div id="gameScreen" class="screen game-screen hidden">
+      <header id="hud">
+        <div class="hud-item">Score: <span id="score">0</span></div>
+        <div class="hud-item">Life: <span id="life">3</span></div>
+      </header>
+      <div id="gameArea">
+        <canvas id="game"></canvas>
+      </div>
+      <div id="clearOverlay" class="overlay hidden" aria-hidden="true">
+        <div class="overlay-card" role="dialog" aria-modal="true">
+          <div class="overlay-title">CLEAR!</div>
+          <div class="overlay-score">Score: <span id="clearScore">0</span></div>
+          <button id="retryButton" class="overlay-button" type="button">Retry</button>
+        </div>
+      </div>
+    </div>
+    <script src="./game.js"></script>
+  </body>
+</html>
