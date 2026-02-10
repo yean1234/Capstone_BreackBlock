@@ -105,20 +105,20 @@
 4) Polish UI (HUD, FEVER banner)
 5) Basic testing checklist + bug fixes
 
-## Definition of Done (Acceptance Checklist)
-- Game runs with `npm install` then:
-  - `npm run dev` starts a dev server
-  - `npm run start` starts a production/static server
-- Paddle moves left/right and ball launches with Space.
-- Bricks break and score updates.
-- Life decreases when ball falls in NORMAL; GAMEOVER at 0.
-- FEVER triggers at score 1500, and re-triggers every +1500 after a FEVER ends:
-  - Ghost balls spawn as specified and collide with paddle
-  - Spawn stops after main ball first falls in FEVER
-  - FEVER ends after all ghosts are gone, then respawns main ball on paddle
-  - Speed multiplier applied and restored
-  - No life loss during FEVER
-  - Score bonus applied during FEVER
-- FEVER UI shows \"FEVER\" text only (no timer).
+## 완료 정의 (Acceptance Checklist)
+- `npm install` 후 게임이 실행됨:
+  - `npm run dev`로 개발 서버 실행
+  - `npm run start`로 프로덕션/정적 서버 실행
+- 패들이 좌/우로 이동하고 스페이스로 공이 발사됨.
+- 벽돌이 깨지고 점수가 정상적으로 증가함.
+- NORMAL에서 공이 바닥으로 떨어지면 라이프 감소, 0이면 GAMEOVER.
+- FEVER는 1500점에서 발동하며, FEVER 종료 후 +1500점마다 재발동:
+  - Ghost 공이 규칙대로 생성되고 패들과 충돌함
+  - FEVER 중 메인 공이 바닥에 처음 떨어지면 Ghost 생성이 즉시 중단됨
+  - 모든 Ghost 공이 사라지면 FEVER 종료, 메인 공을 패들 위에 리스폰
+  - 속도 배율이 적용되고 FEVER 종료 시 원복됨
+  - FEVER 중 라이프 감소 없음
+  - FEVER 점수 보너스가 적용됨
+- FEVER UI는 "FEVER" 텍스트만 표시됨(타이머 없음).
 
 - 채팅 내용은 한국어로 대답해줘.
